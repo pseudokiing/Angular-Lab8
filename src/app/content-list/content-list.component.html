@@ -16,3 +16,9 @@
   <h2>HORROR</h2>
   <app-content-card *ngFor="let comic of (comicBookList | filter: 'Horror'); index as indexHor; last as isLast" [comic]="comic" [class.indexHor]="1" [class.is-last]="isLast"></app-content-card>
 </div>
+<div>
+  <mat-form-field>
+    <mat-label>Band Name</mat-label>
+    <input matInput placeholder="Enter a band name" #bandName>
+  </mat-form-field>
+</div>
