@@ -12,6 +12,7 @@ import { FilterPipe } from './filter.pipe';
 import { DefaultTypePipe } from './default-type.pipe';
 import { AddComicComponent } from './add-comic/add-comic.component';
 import { MessagesComponent } from './messages/messages.component';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { MessagesComponent } from './messages/messages.component';
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     FormsModule,
     HttpClientModule,
     HttpClientInMemoryWebApiModule.forRoot(InMemoryDataService, { dataEncapsulation: false, delay: 1000 })
