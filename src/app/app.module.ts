@@ -13,7 +13,9 @@ import { DefaultTypePipe } from './default-type.pipe';
 import { AddComicComponent } from './add-comic/add-comic.component';
 import { MessagesComponent } from './messages/messages.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+// @ts-ignore
 import {MatInputModule} from '@angular/material/input';
+// @ts-ignore
 import {MatButtonModule} from '@angular/material/button';
 import {MatDialogModule} from '@angular/material/dialog';
 
