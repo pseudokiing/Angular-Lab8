@@ -23,6 +23,6 @@
   <mat-label>Comic Art</mat-label>
 <input matInput default="http://insidepulse.com/wp-content/uploads/2016/09/Flash-6-Wally-West-Kid-Flash-DC-Comics-Rebirth-1.jpg" name="imgUrl" [(ngModel)]="imgBinding">{{ imgUrl }}<!-- http://insidepulse.com/wp-content/uploads/2016/09/Flash-6-Wally-West-Kid-Flash-DC-Comics-Rebirth-1.jpg  -->
 </mat-form-field>
-<button (click)="addComic(aliasBinding, nameBinding, bodyBinding, genreBinding, imgBinding, errBinding)">Add Comic</button><br/>
+<button mat-raised-button color="accent" (click)="addComic(aliasBinding, nameBinding, bodyBinding, genreBinding, imgBinding, errBinding)">Add Comic</button><br/>
 <span> {{ err }} {{ success }} </span>
 
