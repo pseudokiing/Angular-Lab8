@@ -1,6 +1,10 @@
-<input [(ngModel)]="comicName">
-<button (click)="findComic(comicName)">FIND A HERO</button><br>
+<mat-form-field>
+  <mat-label>Find Your Hero</mat-label>
+  <input matInput placeholder="Find Your Hero" [(ngModel)]="comicName">
+</mat-form-field><br/>
+<button mat-raised-button color="primary" (click)="findComic(comicName)">FIND A HERO</button><br>
 {{comicFilter}}
+
 
 <div>
     <app-add-comic [startingId]="comicBookList.length" (newComicEvent)="addComicToList($event)"></app-add-comic>
@@ -15,10 +19,4 @@
 
   <h2>HORROR</h2>
   <app-content-card *ngFor="let comic of (comicBookList | filter: 'Horror'); index as indexHor; last as isLast" [comic]="comic" [class.indexHor]="1" [class.is-last]="isLast"></app-content-card>
-</div>
-<div>
-  <mat-form-field>
-    <mat-label>Band Name</mat-label>
-    <input matInput placeholder="Enter a band name" #bandName>
-  </mat-form-field>
 </div>

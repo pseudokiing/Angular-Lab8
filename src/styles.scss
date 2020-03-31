@@ -12,3 +12,7 @@ $my-theme: mat-light-theme(
     $my-theme-warn
 );
 @include angular-material-theme($my-theme);
+
+mat-form-field {
+  margin: 0 10px;
+}
