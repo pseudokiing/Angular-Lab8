@@ -10,7 +10,7 @@ import { ContentCardComponent } from './content-card/content-card.component';
 import { ContentListComponent } from './content-list/content-list.component';
 import { FilterPipe } from './filter.pipe';
 import { DefaultTypePipe } from './default-type.pipe';
-import { AddComicComponent } from './add-comic/add-comic.component';
+import {AddComicComponent, AddContentDialogComponent} from './add-comic/add-comic.component';
 import { MessagesComponent } from './messages/messages.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 // @ts-ignore
@@ -28,7 +28,8 @@ import {MatDialogModule} from '@angular/material/dialog';
     FilterPipe,
     DefaultTypePipe,
     AddComicComponent,
-    MessagesComponent
+    MessagesComponent,
+    AddContentDialogComponent
   ],
   imports: [
     BrowserModule,
@@ -39,6 +40,9 @@ import {MatDialogModule} from '@angular/material/dialog';
     MatDialogModule,
     HttpClientModule,
     HttpClientInMemoryWebApiModule.forRoot(InMemoryDataService, { dataEncapsulation: false, delay: 1000 })
+  ],
+  entryComponents: [
+    AddContentDialogComponent
   ],
   providers: [],
   bootstrap: [AppComponent]

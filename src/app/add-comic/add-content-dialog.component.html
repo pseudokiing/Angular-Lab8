@@ -1,4 +1,4 @@
-<h1 mat-dialog-title>Add New Hero</h1>
+<h1 mat-dialog-title>Add Hero</h1>
   <div mat-dialog-content>
     <mat-form-field>
       <mat-label>Enter Alias</mat-label>
@@ -27,8 +27,8 @@
 </div>
 <div mat-dialog-actions>
   <button mat-button (click)="onNoClick()">Cancel</button>
-  <button mat-button [mat-dialog-close]="data.newComicItem" cdkFocusInitial>Add New Hero</button>
+  <button mat-raised-button color="warn" [mat-dialog-close]="data.newComicItem" cdkFocusInitial>Add Hero</button>
 </div>
-<button mat-raised-button color="accent" (click)="addComic(aliasBinding, nameBinding, bodyBinding, genreBinding, imgBinding, errBinding)">Add Comic</button><br/>
-<span> {{ err }} {{ success }} </span>
+<!--<button mat-raised-button color="accent" (click)="addComic(aliasBinding, nameBinding, bodyBinding, genreBinding, imgBinding, errBinding)">Add Comic</button><br/>-->
+<!--<span> {{ err }} {{ success }} </span>-->
 
